@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_bacground"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+
+    <EditText android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_min_3_character"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:minLines="1"
+        android:inputType="text"
+        android:background="#FAE5D3"
+        />
+
+    <EditText android:id="@+id/text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="1"
+        android:hint=" Email Address"
+        android:layout_below="@id/text_name"
+        android:layout_margin="10dp"
+        android:background="#FAE5D3"
+        android:inputType="text"
+
+        />
+    <EditText android:id="@+id/text_phno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Mobile Number(10 Digit)"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:background="#FAE5D3"
+        android:layout_margin="10dp"
+        android:inputType="phone"
+        android:layout_below="@id/text_email"
+        />
+    <EditText android:id="@+id/text_delv_address"
+        android:background="#FAE5D3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Delivery Address"
+        android:layout_below="@id/text_phno"
+
+        android:layout_margin="10dp"
+        android:inputType="text"
+        />
+    <EditText android:id="@+id/text_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Password(min. 4 character)"
+        android:minLines="1"
+        android:background="#FAE5D3"
+        android:layout_margin="10dp"
+        android:layout_below="@id/text_delv_address"
+        android:inputType="textPassword"
+        />
+    <EditText android:id="@+id/text_conform_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" Confirm Password"
+        android:background="#FAE5D3"
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:layout_below="@id/text_pass"
+        />
+    <Button android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#000"
+        android:background="#E59866 "
+        android:layout_below="@id/text_conform_pass"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/gradient_bacground">
+<ImageView android:id="@+id/chef2"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:src="@drawable/chef"
+    android:layout_marginStart="100dp"/>
+
+    <EditText android:id="@+id/txt_UN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chef2"
+        android:padding="10dp"
+        android:hint="Enter Your User Name"
+        android:layout_margin="10dp"
+        android:inputType="text"
+        />
+    <EditText android:id="@+id/txt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_UN"
+        android:layout_margin="10dp"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        android:padding="10dp"/>
+    <Button android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textSize="20sp"
+        android:layout_below="@id/txt_pass"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:background="@color/second"
+        />
+
+    <TextView android:id="@+id/txt_forgot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:text="@string/forget_password"
+        android:layout_centerInParent="true"
+        android:paddingTop="10dp"
+        android:textColor="#000"
+        />
+
+    <TextView android:id="@+id/txt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_have_an_account_sign_up_now"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:padding="5dp"
+        android:textColor="#000"
+        />
+
+
+
+</RelativeLayout>
